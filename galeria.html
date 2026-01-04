@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - Company Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    .galeria-categoria {
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    .galeria-categoria.active div {
+      background-color: var(--accent-color);
+      color: white;
+    }
+
+    .galeria-categoria .card {
+      transition: all 0.3s ease;
+    }
+
+    .galeria-categoria:hover .card {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- HEADER (copiado do index.html) -->
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container position-relative d-flex align-items-center justify-content-end justify-content-lg-center">
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#project">O PROJETO</a></li>
+          <li><a href="index.html#locale">LOCALIDADES</a></li>
+          <li><a href="index.html#program">PROGRAMAÇÃO</a></li>
+          <li><a href="galeria.html" class="active">GALERIA</a></li>
+          <li><a href="index.html#contest">CONCURSOS</a></li>
+          <li><a href="index.html#student">ÁREA DO ALUNO</a></li>
+          <li><a href="index.html#teacher">ÁREA DO PROFESSOR</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-lg-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section class="section background-secondary">
+      <div class="container">
+        <div class="row gy-4">
+          <h2 class="bg-title center flip surface-color font-weight-5">GALERIAS</h2>
+        </div>
+
+        <!-- CATEGORIAS -->
+        <div class="row  d-flex justify-content-center mb-4" id="galeria-categorias">
+          <div class="col-md-3">
+            <a href="#" data-target="mobilizacao" class="galeria-categoria active">
+              <div class="card p-4">
+                MOBILIZAÇÃO
+              </div>
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#" data-target="formacao" class="galeria-categoria">
+              <div class="card p-4">
+                FORMAÇÃO
+              </div>
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#" data-target="agentes" class="galeria-categoria">
+              <div class="card p-4">
+                AGENTES
+              </div>
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#" data-target="concurso" class="galeria-categoria">
+              <div class="card p-4">
+                CONCURSO
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- GALERIAS -->
+        <section id="mobilizacao" class="galeria-section">
+          <div class="row g-3">
+            <div class="col-md-3">
+              <a href="assets/img/galeria/mobilizacao/1.jpg" class="glightbox" data-gallery="mobilizacao">
+                <img src="assets/img/galeria/mobilizacao/thumbs/1.jpg" class="img-fluid">
+              </a>
+            </div>
+
+            <div class="col-md-3">
+              <a href="assets/img/galeria/mobilizacao/2.jpg" class="glightbox" data-gallery="mobilizacao">
+                <img src="assets/img/galeria/mobilizacao/thumbs/2.jpg" class="img-fluid">
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section id="formacao" class="galeria-section d-none">
+          <!-- thumbs -->
+        </section>
+
+        <section id="agentes" class="galeria-section d-none">
+          <!-- thumbs -->
+        </section>
+
+        <section id="concurso" class="galeria-section d-none">
+          <!-- thumbs -->
+        </section>
+
+        <!-- GALERIA: MOBILIZAÇÃO -->
+        <!-- <section id="mobilizacao" class="section">
+          <div class="container">
+            <h3 class="mb-4">Mobilização</h3>
+
+            <div class="row g-3">
+              <div class="col-md-3">
+                <a href="assets/img/galeria/mobilizacao/1.jpg" class="glightbox" data-gallery="mobilizacao">
+                  <img src="assets/img/galeria/mobilizacao/thumbs/1.jpg" class="img-fluid">
+                </a>
+              </div>
+
+              <div class="col-md-3">
+                <a href="assets/img/galeria/mobilizacao/2.jpg" class="glightbox" data-gallery="mobilizacao">
+                  <img src="assets/img/galeria/mobilizacao/thumbs/2.jpg" class="img-fluid">
+                </a>
+              </div>
+            </div>
+          </div>
+        </section> -->
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer section position-relative">
+    <div class="line position-absolute"></div>
+    <div class="container">
+      <div class="row">
+        <div class="d-flex align-items-center justify-content-center gap-5">
+          <div class="social-links">
+            <a href="#" class="youtube"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          </div>
+
+          <div class="logos d-flex gap-5">
+            <div class="group d-flex flex-column">
+              <sup>APOIO</sup>
+              <div class="apoio">
+                <div class="container-img sesacre">
+                  <img class="sesacre" src="./assets/img/logos/sesacre.svg">
+                </div>
+                <div class="container-img see">
+                  <img class="see" src="./assets/img/logos/see.svg">
+                </div>
+                <div class="container-img acre">
+                  <img class="acre" src="./assets/img/logos/acre.svg">
+                </div>
+              </div>
+            </div>
+
+            <div class="group d-flex flex-column">
+              <sup>REALIZAÇÃO</sup>
+              <div class="realizacao">
+                <div class="container-img sapien">
+                  <img class="sapien" src="./assets/img/logos/sapien.svg" alt="">
+                </div>
+                <div class="container-img ministerio">
+                  <img class="ministerio" src="./assets/img/logos/ministerio.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- /Footer Section -->
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script async src="https://widget.gspeech.io/d91d59fe2892a905b3ae9e0f694055a0"></script>
+
+  <script>
+    const lightbox = GLightbox({
+      selector: '.glightbox'
+    });
+  </script>
+  <script>
+    document.querySelectorAll('.galeria-categoria').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+  
+        const target = this.dataset.target;
+  
+        /* 1️⃣ remove active de todas */
+        document.querySelectorAll('.galeria-categoria').forEach(el => {
+          el.classList.remove('active');
+        });
+  
+        /* 2️⃣ adiciona active na clicada */
+        this.classList.add('active');
+  
+        /* 3️⃣ esconde todas as galerias */
+        document.querySelectorAll('.galeria-section').forEach(sec => {
+          sec.classList.add('d-none');
+        });
+  
+        /* 4️⃣ mostra a galeria correta */
+        const section = document.getElementById(target);
+        section.classList.remove('d-none');
+  
+        /* 5️⃣ scroll suave */
+        window.scrollTo({
+          top: section.offsetTop - 120,
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+  
+
+
+</body>
+
+</html>

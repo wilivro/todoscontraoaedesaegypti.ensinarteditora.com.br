@@ -942,7 +942,7 @@ section,
   line-height: 1.7rem;
 }
 
-#locale .bg-title {
+#locale .bg-title, .bg-title.center {
   background-size: 345px 100%;
   background-position: center -5px;
 }
