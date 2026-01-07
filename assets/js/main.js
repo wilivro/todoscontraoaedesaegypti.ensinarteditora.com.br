@@ -233,6 +233,6 @@
     campo.focus();
   }
 
-  btnLoginStudent.addEventListener("click", ClickLoginStudent);
+  if(btnLoginStudent)  btnLoginStudent.addEventListener("click", ClickLoginStudent);
 })();
 
